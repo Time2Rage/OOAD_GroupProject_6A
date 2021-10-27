@@ -20,6 +20,8 @@ Deadlines:
 - [ ] Part 3: Project defence by team members   |   your Week 12 lab session  
   **Every member of the team must be present**
 ---
-
+## Useful Links
+[How To GitHub](https://www.softwaretestinghelp.com/github-desktop-tutorial/)  
+[SlackAcademy](https://www.youtube.com/watch?v=pUZzBoAbAOs)
 
 
