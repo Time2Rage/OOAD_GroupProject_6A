@@ -24,4 +24,18 @@ Deadlines:
 [How To GitHub](https://www.softwaretestinghelp.com/github-desktop-tutorial/)  
 [SlackAcademy](https://www.youtube.com/watch?v=pUZzBoAbAOs)
 
+---
+## Roles and Usecases
+Roles
+	1. Developer(worker)
+	2. Manager(of Temp Agency)
+	3. Company(looking for workforce)
+	4. Admin (of Temp Agency)
+
+Use Cases:
+Developer needs to be able to create their profile
+Manager needs to list all the available jobs
+Manager needs to be able to assign developers to jobs and pull them off jobs
+Company needs to be able to create jobs
+
 
