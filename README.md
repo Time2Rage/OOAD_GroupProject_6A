@@ -34,6 +34,7 @@ Roles
 4. Admin (of Temp Agency)
 
 Use Cases:
+
 Developer needs to be able to create their profile
 
 Manager needs to list all the available jobs
