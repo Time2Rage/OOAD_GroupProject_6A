@@ -28,18 +28,18 @@ Deadlines:
 ## Roles and Usecases
 Roles
 
-1. Developer(worker)
-
-3. Manager(of Temp Agency)
-
-5. Company(looking for workforce)
-6. 
-7. Admin (of Temp Agency)
+1. Worker
+2. Manager(of Temp Agency)
+3. Company(looking for workforce)
+4. Admin (of Temp Agency)
 
 Use Cases:
 Developer needs to be able to create their profile
+
 Manager needs to list all the available jobs
+
 Manager needs to be able to assign developers to jobs and pull them off jobs
+
 Company needs to be able to create jobs
 
 
