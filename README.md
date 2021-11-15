@@ -43,4 +43,5 @@ Manager needs to be able to assign developers to jobs and pull them off jobs
 
 Company needs to be able to create jobs
 
+![ressource](https://docs.google.com/drawings/d/e/2PACX-1vQPaHNUhFErEZF4yhVhd1DadcLhjCN0UX7vwyG6nfoQYVrN4BdqPXzIuyi0CmEfWX3I_l-2BuX_750v/pub?w=1440&h=1080)
 
