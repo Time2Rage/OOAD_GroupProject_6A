@@ -43,5 +43,11 @@ Manager needs to be able to assign developers to jobs and pull them off jobs
 
 Company needs to be able to create jobs
 
+### Use Case Diagram
+
+![ressource](https://docs.google.com/drawings/d/e/2PACX-1vTWW-Hw4XTm1dkFCr6t_ly0v9Z3xEkhZbcN3lGRx_vhhakR6FKeh-PFnxHX8w8-AeuC4XztFoxC6hV1/pub?w=1440&h=1080)
+
+### Class Diagram
+
 ![ressource](https://docs.google.com/drawings/d/e/2PACX-1vQPaHNUhFErEZF4yhVhd1DadcLhjCN0UX7vwyG6nfoQYVrN4BdqPXzIuyi0CmEfWX3I_l-2BuX_750v/pub?w=1440&h=1080)
 
