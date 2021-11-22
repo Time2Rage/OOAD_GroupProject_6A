@@ -45,7 +45,7 @@ Company needs to be able to create jobs
 
 ### Use Case Diagram
 
-![resource](https://docs.google.com/drawings/d/e/2PACX-1vTWW-Hw4XTm1dkFCr6t_ly0v9Z3xEkhZbcN3lGRx_vhhakR6FKeh-PFnxHX8w8-AeuC4XztFoxC6hV1/pub?w=1440&h=1080)
+![resource](https://docs.google.com/drawings/d/e/2PACX-1vTjL8AxJjUyAVEcp9ANETvNOCF8TOSl4JseZ1OtAOjpYxLWCYUVJ940257dNlaa5nQRT9UcUc6fhNmO/pub?w=1466&h=1856)
 
 ### Class Diagram
 
