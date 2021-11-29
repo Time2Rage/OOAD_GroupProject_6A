@@ -1,4 +1,4 @@
-public class Worker extends Person implements ICommunication{
+public class Worker extends Person{
     private CV cv;
     private Industry industry;
     private String description;

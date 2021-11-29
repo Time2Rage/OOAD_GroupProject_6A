@@ -1,4 +1,4 @@
-public class SysAdmin extends Person implements ICommunication{
+public class SysAdmin extends Person{
     @Override
     public void sendMessage(String sender, String receiver, String message) {
 

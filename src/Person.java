@@ -1,4 +1,4 @@
-public abstract class Person {
+public abstract class Person implements ICommunication{
     protected String name;
     protected String picture;
     protected String password;
