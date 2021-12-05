@@ -1,7 +1,21 @@
+package tempsys;
+
+import java.util.List;
+
 public class Worker extends Person{
+    public static List<Worker> WORKER_LIST;     //Decided to use List instead of Array, Easier to access
     private CV cv;
     private Industry industry;
     private String description;
+
+    public Worker(String name, String password)
+    {
+
+        this.setActive(true);
+
+        // Needs to be called last
+        WORKER_LIST.add(this);
+    }
 
     public CV getCv() {
         return cv;
@@ -28,7 +42,6 @@ public class Worker extends Person{
     }
 
     @Override
-    public void sendMessage(String sender, String receiver, String message) {
-
-    }
+    public void sendMessage(int senderID, int receiverID, String message)
+    {};
 }

@@ -1,8 +1,16 @@
+package tempsys;
+
 public abstract class Person implements ICommunication{
+    protected static int ID = 0;
     protected String name;
     protected String picture;
     protected String password;
     protected boolean isActive;
+
+    public Person()
+    {
+        ID++;
+    }
 
     public String getName() {
         return name;

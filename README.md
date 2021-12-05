@@ -1,7 +1,7 @@
 # OOAD - GROUP PROJECT 6A
 ### Implementation of a Software Solution for:
 **INDUSTRY    | USE CASES**
-**temp agency | register and apply to join agency / upload job and invite applicants /  review a temp employee / update online CV**
+**temp agency | register and apply to join agency / upload job and invite applicants /  review a temp employee / update online tempsys.CV**
 (This list is not exhaustive and may be subject to change until finalized)
 ---
 ## Team:
@@ -28,8 +28,8 @@ Deadlines:
 ## Roles and Usecases
 Roles
 
-1. Worker
-2. Manager(of Temp Agency)
+1. tempsys.Worker
+2. tempsys.Manager(of Temp Agency)
 3. Company(looking for workforce)
 4. Admin (of Temp Agency)
 
@@ -37,9 +37,9 @@ Use Cases:
 
 Developer needs to be able to create their profile
 
-Manager needs to list all the available jobs
+tempsys.Manager needs to list all the available jobs
 
-Manager needs to be able to assign developers to jobs and pull them off jobs
+tempsys.Manager needs to be able to assign developers to jobs and pull them off jobs
 
 Company needs to be able to create jobs
 
