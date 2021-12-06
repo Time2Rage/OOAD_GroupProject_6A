@@ -1,5 +1,7 @@
 <?php
 
+require_once "autoload.php";
+
 class Worker extends Person
 {
     private int $id;

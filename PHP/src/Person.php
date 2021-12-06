@@ -1,5 +1,6 @@
 <?php
-require_once "interface/Communication.php";
+
+require_once "autoload.php";
 
 abstract class Person implements Communication
 {

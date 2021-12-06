@@ -1,5 +1,7 @@
 <?php
 
+require_once "autoload.php";
+
 class Cv
 {
     private String $date;
