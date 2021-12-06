@@ -3,10 +3,10 @@
 class Worker extends Person
 {
     private int $id;
-    public static array $WORKER_LIST = array();
+    public static array $WORKER_LIST = [];
     private Industry $industry;
     private bool $isFreeToWork;
-    private CV $cv;
+    private Cv $cv;
 
     /**
      * @param int $id
@@ -62,8 +62,17 @@ class Worker extends Person
         array_push(self::$WORKER_LIST, $this);
     }
 
-    public function updateCV(CV $cv):void
+    public function updateCV(Cv $cv):void
     {
         $this->cv = $cv;
     }
+
+    /**
+     * @return Cv
+     */
+    public function getCv(): Cv
+    {
+        return $this->cv;
+    }
+
 }

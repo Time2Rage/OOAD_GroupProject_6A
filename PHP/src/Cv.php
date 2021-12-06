@@ -1,9 +1,16 @@
 <?php
 
-class CV
+class Cv
 {
-    private DateTime $date;
+    private String $date;
     private String $content;
+
+    public function __construct(String $date, String $content)
+    {
+        $this->date = $date;
+        $this->content = $content;
+    }
+
 
     /**
      * @return String
@@ -19,6 +26,11 @@ class CV
     public function getDate(): DateTime
     {
         return $this->date;
+    }
+
+    public function __toString(): string
+    {
+        return $this->content;
     }
 
 
