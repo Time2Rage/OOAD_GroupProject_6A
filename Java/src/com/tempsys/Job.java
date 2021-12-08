@@ -1,4 +1,4 @@
-package tempsys;
+package com.tempsys;
 
 import java.util.List;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ public class Job {
      */
     public static List<Job> JOB_LIST;   //Decided to use List instead of Array, Easier to access
     // Added
-    private String jobUID;
+    private final String jobUID;
     private String jobTitle;    // Added for more realistic job handling
     private String description;
 

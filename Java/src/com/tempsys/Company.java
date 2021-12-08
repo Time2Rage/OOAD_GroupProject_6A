@@ -1,8 +1,8 @@
-package tempsys;
+package com.tempsys;
 
 public class Company {
             private static int CO_ID = 0;
-            private int coID;
+            private final int coID;
             private String companyName;
             private Industry industry;
 
@@ -11,7 +11,7 @@ public class Company {
 
             public Company(String name, Industry industry){
                 CO_ID++;
-                this.coID = CO_ID;
+                this.coID = Integer.getInteger("2" + CO_ID);    // make every company start with a 2
                 this.companyName = name;
                 this.industry = industry;
             }

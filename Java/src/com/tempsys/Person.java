@@ -1,4 +1,4 @@
-package tempsys;
+package com.tempsys;
 
 public abstract class Person implements ICommunication{
     protected static int ID = 0;
@@ -43,4 +43,7 @@ public abstract class Person implements ICommunication{
     public void setActive(boolean active) {
         isActive = active;
     }
+
+    public void sendMessage(int senderID, int receiverID, String message)
+    {}
 }

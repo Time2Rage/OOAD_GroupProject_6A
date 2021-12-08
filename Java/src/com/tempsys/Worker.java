@@ -1,20 +1,29 @@
-package tempsys;
+package com.tempsys;
 
 import java.util.List;
 
 public class Worker extends Person{
     public static List<Worker> WORKER_LIST;     //Decided to use List instead of Array, Easier to access
+    private int workerID;
     private CV cv;
     private Industry industry;
     private String description;
 
     public Worker(String name, String password)
     {
-
+        ID++;
+        this.workerID = Integer.getInteger("3" + ID);   // every Worker starts with 3
+        this.name = name;
+        this.password = password;
         this.setActive(true);
 
         // Needs to be called last
         WORKER_LIST.add(this);
+    }
+
+    public int getWorkerID()
+    {
+        return this.workerID;
     }
 
     public CV getCv() {
@@ -43,5 +52,5 @@ public class Worker extends Person{
 
     @Override
     public void sendMessage(int senderID, int receiverID, String message)
-    {};
+    {}
 }
