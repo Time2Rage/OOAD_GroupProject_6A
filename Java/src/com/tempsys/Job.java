@@ -37,7 +37,7 @@ public class Job {
         System.out.println("Please confirm these information are correct (Y): \n" +
                 jobTitle + industry + description);
         String confirmation = ui.nextLine();
-        if (confirmation.equals("Y"))
+        if (confirmation.equals("y"))
         {
             JOB_LIST.add(this);
         }

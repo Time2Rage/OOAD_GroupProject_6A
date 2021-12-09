@@ -1,6 +1,9 @@
 package com.tempsys;
 
+import java.util.List;
+
 public class Company {
+    public static List<Company> COMPANY_LIST;
             private static int CO_ID = 0;
             private final int coID;
             private String companyName;
@@ -11,9 +14,10 @@ public class Company {
 
             public Company(String name, Industry industry){
                 CO_ID++;
-                this.coID = Integer.getInteger("2" + CO_ID);    // make every company start with a 2
+                this.coID = Integer.parseInt("2" + CO_ID);    // make every company start with a 2
                 this.companyName = name;
                 this.industry = industry;
+                COMPANY_LIST.add(this);
             }
 
             public int getCoID()
@@ -47,6 +51,11 @@ public class Company {
         {
             jobOffered++;
             Job.JOB_LIST.add(job);
+
+        }
+
+        public void revokeJob(Job job)
+        {
 
         }
 }

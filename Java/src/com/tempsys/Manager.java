@@ -5,15 +5,17 @@ import java.util.List;
 
 public class Manager extends Person{
 
-    private int managerID;
+    public static List<Manager> MANAGER_LIST = new ArrayList<>();
+    private final int managerID;
 
     public Manager(String name,String password)
     {
         ID++;
-        this.managerID = Integer.getInteger("1" + ID);
+        this.managerID = Integer.parseInt("1" + ID);
         this.name = name;
         this.password = password;
         this.setActive(true);
+        MANAGER_LIST.add(this);
     }
 
     public int getManagerID()
