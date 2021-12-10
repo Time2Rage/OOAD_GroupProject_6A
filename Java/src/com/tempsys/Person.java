@@ -7,11 +7,6 @@ public abstract class Person implements ICommunication{
     protected String password;
     protected boolean isActive;
 
-    public Person()
-    {
-        ID++;
-    }
-
     public String getName() {
         return name;
     }

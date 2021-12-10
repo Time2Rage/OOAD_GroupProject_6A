@@ -23,17 +23,25 @@ public class Manager extends Person{
         return this.managerID;
     }
 
-    public List<Job> listJobs()
+    public void listJobs()
     {
-        return Job.JOB_LIST;
+        System.out.println(Job.JOB_LIST.toString());
+    }
+    public void listWorker() { System.out.println(Worker.WORKER_LIST.toString());}
+
+    public void assignWorkforce(Worker[] workforce, String jobID)
+    {
+        try {
+            int index = Job.JOB_LIST.indexOf(Job.findJob(jobID));
+            Job.JOB_LIST.get(index).assignWorkforce(List.of(workforce));
+        }
+        catch (NullPointerException npe)
+        {
+            System.out.println("Failed to assign workforce! Job or Workforce not valid");
+        }
+
     }
 
-    public List<Worker> createWorkforce()
-    {
-        List<Worker> workforce = new ArrayList<Worker>();
-        workforce.add(Worker.WORKER_LIST.get(0));
-        return workforce;
-    }
     @Override
     public void sendMessage(int senderID, int receiverID, String message)
     {}

@@ -25,4 +25,7 @@ public class CV {
     public void setCvDoc(String cvDoc) {
         this.cvDoc = cvDoc;
     }
+    @Override
+    public String toString()
+    {return lastChanged + "\n" +cvDoc;}
 }

@@ -4,6 +4,7 @@ public class SysAdmin extends Person{
 
     public SysAdmin(String name, String password)
     {
+        ID++;
         this.name = name;
         this.password = password;
         this.setActive(true);

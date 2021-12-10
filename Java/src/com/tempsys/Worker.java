@@ -51,6 +51,11 @@ public class Worker extends Person{
 
     }
 
+    @Override
+    public String toString()
+    {
+        return workerID + " / " + name + " / " + industry + "|\n";
+    }
 
     @Override
     public void sendMessage(int senderID, int receiverID, String message)

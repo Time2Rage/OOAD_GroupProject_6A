@@ -1,5 +1,6 @@
 package com.tempsys;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -9,14 +10,17 @@ public class Job {
     /*
     * ATTRIBUTE SECTION
      */
-    public static List<Job> JOB_LIST;   //Decided to use List instead of Array, Easier to access
+    public static List<Job> JOB_LIST = new ArrayList<>();   //Decided to use List instead of Array, Easier to access
     // Added
     private final String jobUID;
     private String jobTitle;    // Added for more realistic job handling
     private String description;
+    private List<Worker> assignedWorkforce;
+
 
     private Industry industry;
     private Company employer;
+    private boolean finished;
     private String review;
 
     /*
@@ -31,6 +35,8 @@ public class Job {
         this.industry = industry;
         this.employer = employer;
         this.description = description;
+        this.assignedWorkforce = new ArrayList<>();
+        this.finished = false;
 
         // Validation
         Scanner ui = new Scanner(System.in);
@@ -45,7 +51,6 @@ public class Job {
         {
             exit(1);
         }
-        ui.close();
     }
 
     /*
@@ -88,18 +93,63 @@ public class Job {
         this.employer = employer;
     }
 
+    public List<Worker> getAssignedWorkforce() {
+        return assignedWorkforce;
+    }
+
+    public void setAssignedWorkforce(List<Worker> assignedWorkforce) {
+        this.assignedWorkforce = assignedWorkforce;
+    }
+
+    public boolean isFinished() {
+        return finished;
+    }
+
+    public void setFinished(boolean finished) {
+        this.finished = finished;
+    }
+
+    @Override
+    public String toString()
+    {
+        return jobUID + "\n" + jobTitle + "\n" + industry + "\n" +employer.getCompanyName() + "\n" +
+                "-------------------------------------\n";
+
+    }
+
     /*
     * METHOD SECTION
     * ToDo 5/12/21 - Read Review is not good in this form.
     *
      */
+    public void assignWorkforce(List<Worker> workforce)
+    {
+        this.assignedWorkforce=workforce;
+    }
+
+    public static Job findJob(String uid)
+    {
+        for (Job job: JOB_LIST
+             ) {
+            if (job.getJobUID().equals(uid))
+            {
+                return job;
+            }
+        }
+        System.out.println("Job not in List!");
+        return null;
+    }
+
+
     public void storeReview(String review)
     {
         this.review = review;
     }
-    public void readReview()
+    public String readReview()
     {
-        System.out.println(this.review);
+        return this.review;
     }
+
+
 
 }
