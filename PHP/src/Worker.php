@@ -1,6 +1,6 @@
 <?php
 
-require_once "autoload.php";
+require_once "Person.php";
 
 class Worker extends Person
 {
