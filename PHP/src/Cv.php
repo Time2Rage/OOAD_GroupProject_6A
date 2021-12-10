@@ -1,7 +1,5 @@
 <?php
 
-require_once "autoload.php";
-
 class Cv
 {
     private String $date;
@@ -23,9 +21,9 @@ class Cv
     }
 
     /**
-     * @return DateTime
+     * @return String
      */
-    public function getDate(): DateTime
+    public function getDate(): String
     {
         return $this->date;
     }
