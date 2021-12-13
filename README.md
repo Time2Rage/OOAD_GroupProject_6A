@@ -1,7 +1,8 @@
 # OOAD - GROUP PROJECT 6A
 ### Implementation of a Software Solution for:
 **INDUSTRY    | USE CASES**
-**temp agency | register and apply to join agency / upload job and invite applicants /  review a temp employee / update online com.tempsys.CV**
+
+**temp agency | register and apply to join agency / upload job and invite applicants /  review a temp employee / update online CV**
 (This list is not exhaustive and may be subject to change until finalized)
 ---
 ## Team:
@@ -19,7 +20,7 @@ Deadlines:
       Every member of the team must submit the same ZIP
 - [ ] Part 3: Project defence by team members   |   your Week 12 lab session  
   **Every member of the team must be present**
----
+
 ## Useful Links
 [How To GitHub](https://www.softwaretestinghelp.com/github-desktop-tutorial/)  
 [SlackAcademy](https://www.youtube.com/watch?v=pUZzBoAbAOs)
@@ -50,4 +51,7 @@ Company needs to be able to create jobs
 ### Class Diagram
 
 ![resource](https://docs.google.com/drawings/d/e/2PACX-1vQPaHNUhFErEZF4yhVhd1DadcLhjCN0UX7vwyG6nfoQYVrN4BdqPXzIuyi0CmEfWX3I_l-2BuX_750v/pub?w=1440&h=1080)
+
+
+
 
